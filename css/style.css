@@ -1,0 +1,563 @@
+
+/* ===== CSS RESET STARTS =====*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}
+
+/*======= RESET ENDS HERE =====*/
+
+html {
+	height: 100%;
+}
+
+body {
+	width: 12000px;
+	height: 100%;
+	overflow-y: hidden;
+}
+
+header {
+	width: 98%;
+	height: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+nav {
+	width: 98%;
+	height: 40px;
+	font-size: 15px;
+}
+
+section {
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+
+#home {
+	background-image: url('../img/bg.png');
+	background-size: 2000px 100%;
+}
+
+#events {
+	background-color: blue;
+}
+
+.sun {
+	position: absolute;
+	top: -160px;
+	left: -140px;
+	z-index: -1;
+}
+
+.manitlogo {
+	position: absolute;
+	right:10px;
+	top:10px;
+	width: 80px;
+	height: auto;
+}
+
+.cloud1 {
+	position: absolute;
+	top: -12%;
+	left: 4%;
+	z-index: 31;
+	width: 20%;
+	-webkit-animation: cloudmotion1 3s linear infinite;
+	-moz-animation: cloudmotion1 3s linear infinite;
+	-o-animation: cloudmotion1 3s linear infinite;
+	animation: cloudmotion1 3s linear infinite;
+}
+
+.cloud2 {
+	position: absolute;
+	top: -14%;
+	left: 50%;
+	z-index: 29;
+	width: 20%;
+	-webkit-animation: cloudmotion2 3.5s linear infinite;
+	-moz-animation: cloudmotion2 3.5s linear infinite;
+	-o-animation: cloudmotion2 3.5s linear infinite;
+	animation: cloudmotion2 3.5s linear infinite;
+}
+
+.cloud3 {
+	position: absolute;
+	top: -12%;
+	left: 80%;
+	z-index: 29;
+	width: 10%;
+	-webkit-animation: cloudmotion3 2.8s linear 0.3s infinite;
+	-moz-animation: cloudmotion3 2.8s linear 0.3s infinite;
+	-o-animation: cloudmotion3 2.8s linear 0.3s infinite;
+	animation: cloudmotion3 2.8s linear 0.3s infinite;
+}
+
+.home_info_box img {
+	position: absolute;
+	left: 12%;
+	top: 13%;
+	z-index: 30;
+	width:600px;
+	height:auto;
+}
+
+
+/* =========== menu hovercraft :) ============== */
+
+#menucontainer{
+	position: absolute;
+	top:14%;
+    /*width: 16.62%;*/
+    width: 22%;
+    height: 45%;
+    z-index:10000;
+    background-color: rgba(255,255,255,1);
+   	right:0px;
+   	border: 2px 2px 2px 2px;
+   	border-color: #000;
+   	transition-property:width height;
+    -moz-transition-property: width height; /* Firefox 4 */
+    -webkit-transition-property:width height; /* Safari and Chrome */
+    -o-transition-property:width height; /* Opera */
+
+    transition-duration: 500ms;
+    -moz-transition-duration: 500ms; /* Firefox 4 */
+    -webkit-transition-duration: 500ms; /* Safari and Chrome */
+    -o-transition-duration: 500ms; /* Opera */
+
+    transition-timing-function: linear;
+    -moz-transition-timing-function: linear; /* Firefox 4 */
+    -webkit-transition-timing-function: linear; /* Safari and Chrome */
+    -o-transition-timing-function: linear; /* Opera */ 
+}
+
+/* ======= REMOVING THE href Border ======= */
+	/* 
+		state: not complete
+	*/
+#menucontainer a{
+	border:0px;
+	outline: none;
+}
+.menucontainerLinks{
+	text-decoration: none;
+	outline: none;
+}
+
+/* ====================================== */
+
+#menucontainer:hover{
+	/* 	keep this 35px in extra plus
+		with the total box hover calculation
+		Box hover height = (140) + (90x4)+ 10 px
+		Add 35px to this for menucontainer hover
+	
+    width: 350px;
+    */
+    width: 28%;
+    height: 55%;
+}
+
+
+
+.box_property{
+	/* menu regio has been allocated z-index props
+	between 1500 - 1600 */
+	z-index: 1500;
+	margin-top: 1%;
+	margin-left: 3px;
+    height: 19.05%;
+    border-width: 2%;
+    border-style: solid;
+    -moz-box-shadow:    inset 0 0 15px #999;
+   	-webkit-box-shadow: inset 0 0 15px #999;
+   	box-shadow:         inset 0 0 15px #999;
+    transition-property:height;
+    -moz-transition-property:height; /* Firefox 4 */
+    -webkit-transition-property:height; /* Safari and Chrome */
+    -o-transition-property:height; /* Opera */
+
+    transition-duration: 350ms;
+    -moz-transition-duration: 350s; /* Firefox 4 */
+    -webkit-transition-duration: 350ms; /* Safari and Chrome */
+    -o-transition-duration: 350s; /* Opera */
+
+    transition-timing-function: linear;
+    -moz-transition-timing-function: linear; /* Firefox 4 */
+    -webkit-transition-timing-function: linear; /* Safari and Chrome */
+    -o-transition-timing-function: linear; /* Opera */ 
+}
+
+#box1{
+	transition: all .2s ease-in-out;
+    background-color: #e89df1;
+}
+
+#box2{
+	transition: all .2s ease-in-out;
+	background-color: #98d6e3;
+}
+
+#box3{
+	transition: all .2s ease-in-out;
+	background-color: #ffa473;
+}
+
+
+#box4{
+	transition: all .2s ease-in-out;
+	background-color: #f8dba8;
+}
+
+
+#box5{
+	transition: all .2s ease-in-out;
+	background-color: #000000;
+}
+
+
+#box1:hover,#box2:hover,#box3:hover,#box4:hover,#box5:hover,.box_property:hover{
+	z-index:1501;
+    transform: scale(1.5);
+
+}
+
+.boxicon{
+	height: 95%;
+	margin-left: 15%;
+	margin-top: 2%;
+	margin-bottom: 3%;
+}
+.boxicon:hover{
+	/*width: 300px;
+	height: 117px;
+	margin-top: 20px;
+	margin-left: 20%;*/
+}
+/* ========== menu hovercraft ends ============= */
+
+
+
+
+.seashore {
+	position: absolute;
+	left:0%;
+	bottom: 0%;
+	width: 50%;
+	height: 600px;
+	z-index:990;
+	overflow: hidden;
+}
+
+.island {
+	position: absolute;
+	left: 0%;
+	bottom: 15px;
+	z-index: 1002;
+}
+
+.social_baloon {
+	position: absolute;
+	left:0%;
+	top: 14%;
+	z-index: 991;
+	-webkit-animation: movebaloon 3s linear 0.3s infinite;
+	-moz-animation: movebaloon 3s linear 0.3s infinite;
+	-o-animation: movebaloon 3s linear 0.3s infinite;
+	animation: movebaloon 3s linear 0.3s infinite;
+}
+
+.sea {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	bottom: 0%;
+	overflow:hidden;
+}
+
+.wave1 {
+	position: absolute;
+	background-image: url('../img/w1.png');
+	background-repeat: repeat-x;
+	/*top:0px;*/
+	bottom: 0%;
+	left: -10%;
+	z-index: 985;
+	width: 8000px;
+	height: 10%;
+	-webkit-animation: wavemotion1 6s linear infinite ;
+	-moz-animation: wavemotion1 6s linear infinite ;
+	-o-animation: wavemotion1 6s linear infinite ;
+	animation: wavemotion1 6s linear infinite;
+}
+
+.wave2 {
+	position: absolute;
+	/*top: 8px;*/
+	left: -8%;
+	bottom: -2%;
+	z-index: 1004;
+	width: 8000px;
+	height: 10%;
+	background-image: url('../img/w2.png');
+	background-repeat: repeat-x;
+	-webkit-transform: translateZ(80px);
+	-moz-transform: translateZ(80px);
+	-ms-transform: translateZ(80px);
+	transform: translateZ(30px);
+	-webkit-animation: wavemotion2 4s linear infinite;
+	-moz-animation: wavemotion2 4s linear infinite;
+	-o-animation: wavemotion2 4s linear infinite;
+	animation: wavemotion2 4s linear infinite;
+	
+}
+
+.boat {
+	position: fixed;
+	bottom: -4%;
+	left: 75%;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	z-index: 1003;
+	-webkit-animation: boatmotion 5s linear infinite;
+	-moz-animation: boatmotion 5s linear infinite;
+	-o-animation: boatmotion 5s linear infinite;
+	animation: boatmotion 5s linear infinite;
+}
+
+
+
+/*=============================
+ *	Animation KEYFRAMES here
+ *==============================*/
+
+@-webkit-keyframes movebaloon {
+	0% {
+		-webkit-transform: rotate(0deg);
+		-webkit-transform-origin: bottom left;
+	}
+	50%% {
+		-webkit-transform: rotate(5deg);
+		-webkit-transform-origin: bottom left;
+	}
+	100% {
+		-webkit-transform: rotate(0deg);
+		-webkit-transform-origin: bottom left;
+	}
+}
+
+@-moz-keyframes movebaloon {
+	0% {
+		-moz-transform: rotate(0deg);
+		-moz-transform-origin: bottom left;
+	}
+	50%% {
+		-moz-transform: rotate(5deg);
+		-moz-transform-origin: bottom left;
+	}
+	100% {
+		-moz-transform: rotate(0deg);
+		-moz-transform-origin: bottom left;
+	}
+}
+
+@-ms-keyframes movebaloon {
+	0% {
+		-ms-transform: rotate(0deg);
+		-ms-transform-origin: bottom left;
+	}
+	50%% {
+		-ms-transform: rotate(5deg);
+		-ms-transform-origin: bottom left;
+	}
+	100% {
+		-ms-transform: rotate(0deg);
+		-ms-transform-origin: bottom left;
+	}
+}
+
+@-o-keyframes movebaloon {
+	0% {
+		-o-transform: rotate(0deg);
+		-o-transform-origin: bottom left;
+	}
+	50%% {
+		-o-transform: rotate(5deg);
+		-o-transform-origin: bottom left;
+	}
+	100% {
+		-o-transform: rotate(0deg);
+		-o-transform-origin: bottom left;
+	}
+}
+
+@keyframes movebaloon {
+	0% {
+		transform: rotate(0deg);
+		transform-origin: bottom left;
+	}
+	50%% {
+		transform: rotate(5deg);
+		transform-origin: bottom left;
+	}
+	100% {
+		transform: rotate(0deg);
+		transform-origin: bottom left;
+	}
+
+}
+
+
+@-webkit-keyframes wavemotion1 {
+	from { -webkit-transform: rotate(0deg) translateX(12px) rotate(0deg); }
+	to   { -webkit-transform: rotate(360deg) translateX(12px) rotate(-360deg); }
+}
+
+@-moz-keyframes wavemotion1 {
+	from { -moz-transform: rotate(0deg) translateX(12px) rotate(0deg); }
+	to   { -moz-transform: rotate(360deg) translateX(12px) rotate(-360deg); }
+}
+
+@-o-keyframes wavemotion1 {
+	from { -o-transform: rotate(0deg) translateX(12px) rotate(0deg); }
+	to   { -o-transform: rotate(360deg) translateX(12px) rotate(-360deg); }
+}
+
+@keyframes wavemotion1 {
+	from { transform: rotate(0deg) translateX(12px) rotate(0deg); }
+	to   { transform: rotate(360deg) translateX(12px) rotate(-360deg); }
+}
+
+@-webkit-keyframes wavemotion2 {
+	from { -webkit-transform: rotate(0deg) translateX(8px) rotate(0deg); }
+	to   { -webkit-transform: rotate(360deg) translateX(8px) rotate(-360deg); }
+}
+
+@-moz-keyframes wavemotion2 {
+	from { -moz-transform: rotate(0deg) translateX(8px) rotate(0deg); }
+	to   { -moz-transform: rotate(360deg) translateX(8px) rotate(-360deg); }
+}
+
+@-o-keyframes wavemotion2 {
+	from { -o-transform: rotate(0deg) translateX(8px) rotate(0deg); }
+	to   { -o-transform: rotate(360deg) translateX(8px) rotate(-360deg); }
+}
+
+@keyframes wavemotion2 {
+	from { transform: rotate(0deg) translateX(8px) rotate(0deg); }
+	to   { transform: rotate(360deg) translateX(8px) rotate(-360deg); }
+}
+
+@-webkit-keyframes cloudmotion1 {
+	0% {-webkit-transform: rotate(0deg) translateX(10px) rotate(0deg);}
+	100%{-webkit-transform: rotate(360deg) translateX(10px) rotate(-360deg);}
+}
+
+@-webkit-keyframes cloudmotion2 {
+0% {-webkit-transform: rotate(0deg) translateX(10px) rotate(0deg);}
+	100%{-webkit-transform: rotate(360deg) translateX(10px) rotate(-360deg);}
+}
+
+@-webkit-keyframes cloudmotion3 {
+	0% {-webkit-transform: rotate(0deg) translateX(8px) rotate(0deg);}
+	100%{-webkit-transform: rotate(360deg) translateX(8px) rotate(-360deg);}
+}
+
+
+@-webkit-keyframes boatmotion {
+	0%   {-webkit-transform: rotate(0deg) translateX(15px) rotate(0deg);}
+    12%  {-webkit-transform: rotate(10deg) translateX(12px) rotate(0deg);}
+    25%  {-webkit-transform: rotate(20deg) translateX(12px) rotate(0deg);}
+    38%  {-webkit-transform: rotate(10deg) translateX(15px) rotate(0deg);}
+    50% {-webkit-transform: rotate(0deg) translateX(12px) rotate(0deg);}
+    62% {-webkit-transform: rotate(-10deg) translateX(15px) rotate(0deg);}
+    75% {-webkit-transform: rotate(-20deg) translateX(12px) rotate(0deg);}
+    88% {-webkit-transform: rotate(-10deg) translateX(12px) rotate(0deg);}
+    100% {-webkit-transform: rotate(0deg) translateX(15px) rotate(0deg);}
+}
+
+@-moz-keyframes boatmotion {
+	0%   {-moz-transform: rotate(0deg) translateX(15px) rotate(0deg);}
+    12%  {-moz-transform: rotate(10deg) translateX(12px) rotate(0deg);}
+    25%  {-moz-transform: rotate(20deg) translateX(12px) rotate(0deg);}
+    38%  {-moz-transform: rotate(10deg) translateX(15px) rotate(0deg);}
+    50% {-moz-transform: rotate(0deg) translateX(12px) rotate(0deg);}
+    62% {-moz-transform: rotate(-10deg) translateX(15px) rotate(0deg);}
+    75% {-moz-transform: rotate(-20deg) translateX(12px) rotate(0deg);}
+    88% {-moz-transform: rotate(-10deg) translateX(12px) rotate(0deg);}
+    100% {-moz-transform: rotate(0deg) translateX(15px) rotate(0deg);}
+}
+
+@-o-keyframes boatmotion {
+	0%   {-o-transform: rotate(0deg) translateX(15px) rotate(0deg);}
+    12%  {-o-transform: rotate(10deg) translateX(12px) rotate(0deg);}
+    25%  {-o-transform: rotate(20deg) translateX(12px) rotate(0deg);}
+    38%  {-o-transform: rotate(10deg) translateX(15px) rotate(0deg);}
+    50% {-o-transform: rotate(0deg) translateX(12px) rotate(0deg);}
+    62% {-o-transform: rotate(-10deg) translateX(15px) rotate(0deg);}
+    75% {-o-transform: rotate(-20deg) translateX(12px) rotate(0deg);}
+    88% {-o-transform: rotate(-10deg) translateX(12px) rotate(0deg);}
+    100% {-o-transform: rotate(0deg) translateX(15px) rotate(0deg);}
+}
+
+@keyframes boatmotion {
+	0%   {transform: rotate(0deg) translateX(15px) rotate(0deg);}
+    12%  {transform: rotate(10deg) translateX(12px) rotate(0deg);}
+    25%  {transform: rotate(20deg) translateX(12px) rotate(0deg);}
+    38%  {transform: rotate(10deg) translateX(15px) rotate(0deg);}
+    50% {transform: rotate(0deg) translateX(12px) rotate(0deg);}
+    62% {transform: rotate(-10deg) translateX(15px) rotate(0deg);}
+    75% {transform: rotate(-20deg) translateX(12px) rotate(0deg);}
+    88% {transform: rotate(-10deg) translateX(12px) rotate(0deg);}
+    100% {transform: rotate(0deg) translateX(15px) rotate(0deg);}
+}

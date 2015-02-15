@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Test Waves</title>
+ 
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/transition.css" type="text/css" />
+ 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>	
+
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function() {
+       $("#banner a, #menucontainer a").bind("click",function(event){
+           event.preventDefault();
+           var target = $(this).attr("href");
+ 
+           $("html, body").stop().animate({
+               scrollLeft: $(target).offset().left,
+			   scrollTop: $(target).offset().top
+           }, 1200);
+
+           //console.log($(window).width()+"-->"+$(target).offset().left);
+           var shiftWave1 = 0.1*$(window).width();
+           var offsetWave1 = $(target).offset().left * 0.2;
+           //console.log(-offsetWave1-shiftWave1);
+           $(".wave1").stop().animate({
+           		left : -offsetWave1-shiftWave1
+           }, 1500);
+
+           var shiftWave2 = 0.08*$(window).width();
+           var offsetWave2 = $(target).offset().left * 0.05; 
+           //console.log(-offsetWave2-shiftWave2);
+           $(".wave2").stop().animate({
+           		left : -offsetWave2-shiftWave2
+           }, 1500);
+
+           $(".island").stop().animate({left: -$(target).offset().left},1200);
+           $(".social_baloon").stop().animate({left: -$(target).offset().left},1200);
+       });
+
+	});
+</script>
+
+</head>
+ 
+<body>
+		
+
+	<section>
+		
+		<article id="home" class="panel">
+
+			<img class="sun" src="img/sun.png" />
+			<img class="cloud1" src="img/clouds/cloud1.png" />
+			<img class="cloud2" src="img/clouds/cloud2.png" />
+			<img class="cloud3" src="img/clouds/cloud3.png" />
+			<img class="manitlogo selectDisable" src="img/manitlogo.png" />
+
+			<div id="banner">
+				<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#events">Events</a></li>
+				<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+
+		
+			<p> Random Home Content</p>
+			<!--<div class="home_info_box">
+			<img src="img/home_info_box.png" />
+			<img src="img/home_info.png" style="z-index:5" />
+			</div>-->
+		</article>
+
+		<article id="events" class="panel">
+			<h3> Some Random Events</h3>
+		</article>
+
+		<article id="contact" class="panel">
+			<h3>Contact INfo</h3>
+		</article>
+
+	</section>
+
+
+	<div id="menucontainer" class="nbanner">
+        <a href="#events" class="menucontainerLinks">
+        	<div class="box_property" id="box1">
+        		<img class="boxicon" src="img/homemenu/unbox1.png" />
+        	</div>
+        </a>
+        
+        <a href="#events">
+        	<div class="box_property" id="box2">
+        		<img class="boxicon" src="img/homemenu/unbox2.png" />
+        	</div>
+        </a>
+
+        <a href="#events">
+        	<div class="box_property" id="box3">
+        		<img class="boxicon" src="img/homemenu/unbox3.png" />
+        	</div>
+        </a>
+
+        <a href="#events">
+        	<div class="box_property" id="box4">
+        		<img class="boxicon" src="img/homemenu/unbox4.png" />
+        	</div>
+        </a>
+
+        <a href="#contact">
+        	<div class="box_property" id="box5">
+	        	<img class="boxicon" src="img/homemenu/unbox5.png" />
+    	    </div>
+    	</a>
+    </div>
+
+	<div class="sea">
+	<div class="seashore">
+		<div class="social_baloon">
+			<img src="img/social_baloon.png" usemap="#socialmap">
+				
+		</div>
+		<img class="island" src="img/island.png" />
+	</div>
+
+	
+
+		<div class="wave1"></div>
+		<img class="boat" src="img/tboat.png" />
+		<div class="wave2"></div>
+	</div>
+</body>
+</html>
