@@ -1,0 +1,62 @@
+/*
+	z-index range: 7100 - 8000;
+*/
+
+#registration{
+		background-image: url(../img/registration/bg.png);
+		opacity: 1;
+		z-index: 7100;
+		background-repeat: no-repeat;
+		height: 100%;
+}
+
+#regcontainer{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 5%;
+	height: auto;
+	overflow-y:hidden;
+	height: auto;
+	z-index: 7101;
+	color: #fff;
+	/*background-color: rgba(176,0,48,0.4);*/
+}
+
+#reg_heading{
+	width: 60%;
+	margin-left: 20%;
+	height: 40%;
+	margin-top: 0%;
+	background-color: rgba(255,255,255,0.05);
+	z-index: 7102;
+}
+
+h3 {
+	margin-top: 0%;
+	padding-top: 3%;
+	margin-bottom: 5%;
+	font-family: funsized;
+	font-size: 520%;
+	text-align: center;
+}
+#reg_embeddform{
+	width: 70%;
+	height: 15%;
+	/*margin-top: 202%;*/
+	margin-top:2%;
+	margin-left: 15%;
+	background-color: rgba(255,255,255,0.05);
+	z-index: 7103;
+	visibility: hidden;
+}
+#regbutton{
+	
+}
+#formframe{
+	
+}
+
+/* sample link
+<iframe src="https://docs.google.com/forms/d/1ed4DV1Nn2gkAB7M2q_kbspFDWWPQ9Rb4g9x-lcL8TzA/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+*/

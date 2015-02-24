@@ -2,86 +2,123 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>Test Waves</title>
- 
-<link rel="stylesheet" href="css/style.css" type="text/css" />
-<link rel="stylesheet" href="css/transition.css" type="text/css" />
- 
+<meta name="description" content="Maffick 2015 : Fièsta de Cómico. Maffick is an annual Cultural Festival of Maulana Azad National Institute of Technology, Bhopal MP." />
+<meta name="author" content="Maffick Web Developer Team" />
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<title>Maffick 2015::Fièsta de Cómico</title>
+
+<link rel="icon" type="image/png" href="img/manitlogo.png" />
+
+<!------------ Stylesheets -------------->
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/fonts.css"/>
+<link rel="stylesheet" type="text/css" href="css/transition.css" />
+<link rel="stylesheet" type="text/css" href="css/events.css"/>
+<link rel="stylesheet" type="text/css" href="css/registration.css"/>
+<link rel="stylesheet" type="text/css" href="css/pronites.css"/>
+<link rel="stylesheet" type="text/css" href="css/socialcause.css"/>
+ <!--<link rel="stylesheet" href="css/puppets.css" type="text/css" />-->
+
+<!---------------- Scripts ------------------>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
 <script src="js/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>	
-
-<script type="text/javascript" charset="utf-8">
-	$(document).ready(function() {
-       $("#banner a, #menucontainer a").bind("click",function(event){
-           event.preventDefault();
-           var target = $(this).attr("href");
- 
-           $("html, body").stop().animate({
-               scrollLeft: $(target).offset().left,
-			   scrollTop: $(target).offset().top
-           }, 1200);
-
-           //console.log($(window).width()+"-->"+$(target).offset().left);
-           var shiftWave1 = 0.1*$(window).width();
-           var offsetWave1 = $(target).offset().left * 0.2;
-           //console.log(-offsetWave1-shiftWave1);
-           $(".wave1").stop().animate({
-           		left : -offsetWave1-shiftWave1
-           }, 1500);
-
-           var shiftWave2 = 0.08*$(window).width();
-           var offsetWave2 = $(target).offset().left * 0.05; 
-           //console.log(-offsetWave2-shiftWave2);
-           $(".wave2").stop().animate({
-           		left : -offsetWave2-shiftWave2
-           }, 1500);
-
-           $(".island").stop().animate({left: -$(target).offset().left},1200);
-           $(".social_baloon").stop().animate({left: -$(target).offset().left},1200);
-       });
-
-	});
+<script type="text/javascript" charset="utf-8" src="js/anim.js">
 </script>
+
+
 
 </head>
  
 <body>
 		
-
 	<section>
 		
 		<article id="home" class="panel">
-
-			<img class="sun" src="img/sun.png" />
 			<img class="cloud1" src="img/clouds/cloud1.png" />
 			<img class="cloud2" src="img/clouds/cloud2.png" />
 			<img class="cloud3" src="img/clouds/cloud3.png" />
 			<img class="manitlogo selectDisable" src="img/manitlogo.png" />
 
-			<div id="banner">
+			<!--<div id="banner">
 				<ul>
 				<li><a href="#home">Home</a></li>
 				<li><a href="#events">Events</a></li>
 				<li><a href="#contact">Contact</a></li>
 				</ul>
-			</div>
+			</div>-->
 
 		
-			<p> Random Home Content</p>
-			<!--<div class="home_info_box">
-			<img src="img/home_info_box.png" />
-			<img src="img/home_info.png" style="z-index:5" />
-			</div>-->
+			<p> .</p>
+			<div class="maffickBanner">
+				<img src="img/maffick.png" style="z-index:5" />
+			</div>
 		</article>
 
+
+		<!-- --------- EVENTS ------------- -->
 		<article id="events" class="panel">
-			<h3> Some Random Events</h3>
+			<div id="panelcontainer">
+				<!--
+				-->
+				<div class="panelbox" id="pbox1">
+					<a href="#event1"><img src="img/events/panels/new/panboards/first.png" style="height:100px; width:105px; top:-100px; " id="board1" class="board"/></a>
+					<img src="img/events/panels/new/first.png" id="firstpanel" class="panels" >
+				</div>
+				<div class="panelbox" id="pbox2">
+					<a href="#event2"><img src="img/events/panels/new/panboards/second.png" style="height:100px; width:106px; top:-100px;" id="board2" class="board"/></a>
+					<img src="img/events/panels/new/second.png" id="secondpanel" class="panels"/>
+				</div>
+				<div class="panelbox" id="pbox3">
+					<a href="#event3"><img src="img/events/panels/new/panboards/third.png" style="height:100px; width:109px; top:-100px;" id="board3" class="board"/></a>
+					<img src="img/events/panels/new/third.png" id="thirdpanel" class="panels" />
+				</div>
+				<div class="panelbox" id="pbox4">
+					<a href="#event4"><img src="img/events/panels/new/panboards/fourth.png" style="height:100px; width:151px; top:-100px;" id="board4" class="board"/></a>
+					<img src="img/events/panels/new/fourth.png" id="fourthpanel" class="panels" />
+				</div>
+				<div class="panelbox" id="pbox5">
+					<a href="#event5"><img src="img/events/panels/new/panboards/fifth.png" style="height:100px; width:114px; top:-100px;" id="board5" class="board"/></a>
+					<img src="img/events/panels/new/fifth.png" id="fifthpanel" class="panels" />
+				</div>
+			</div>
+		</article>
+		
+
+		<!-- ----------Registration------------ -->
+		<article id="registration" class="panel">
+			<!--<div id="reg_banner">
+				<h3>Wanna jump in?</h3>
+			</div>-->
+			<div id="regcontainer">
+				<div id="reg_heading">
+					<h3>Wanna Jump in?</h3>
+				</div>
+				<center><a href="#"><img src="img/registration/regbutton.png" style="margin-top:1%;" id="regbutton"/></a></center>
+				<div id="reg_embeddform">
+					<center><iframe src="https://docs.google.com/forms/d/1ed4DV1Nn2gkAB7M2q_kbspFDWWPQ9Rb4g9x-lcL8TzA/viewform?embedded=true" width="60%" height="400px" frameborder="0" marginheight="0" marginwidth="0" id="formframe">Loading...</iframe></center>
+				</div>
+			</div>
+		</article>
+		
+
+		<!-- ------------- pro nites ---------- -->
+		<article id="pronites" class="panel">
+			<h3> </h3>
+		</article>
+		
+
+		<!-- ----------Social cause------------ -->
+		<article id="socialcause" class="panel">
+			<h3> </h3>
+		</article>
+		
+
+		<!-- ---------- contact --------------- -->
+		<article id="contact" class="panel">
+			<h3>Contact Us</h3>
 		</article>
 
-		<article id="contact" class="panel">
-			<h3>Contact INfo</h3>
-		</article>
+
 
 	</section>
 
@@ -93,19 +130,19 @@
         	</div>
         </a>
         
-        <a href="#events">
+        <a href="#registration">
         	<div class="box_property" id="box2">
-        		<img class="boxicon" src="img/homemenu/unbox2.png" />
+	        	<img class="boxicon" src="img/homemenu/unbox2.png" />
         	</div>
         </a>
 
-        <a href="#events">
+        <a href="#pronites">
         	<div class="box_property" id="box3">
         		<img class="boxicon" src="img/homemenu/unbox3.png" />
         	</div>
         </a>
 
-        <a href="#events">
+        <a href="#socialcause">
         	<div class="box_property" id="box4">
         		<img class="boxicon" src="img/homemenu/unbox4.png" />
         	</div>
@@ -118,20 +155,39 @@
     	</a>
     </div>
 
-	<div class="sea">
-	<div class="seashore">
-		<div class="social_baloon">
-			<img src="img/social_baloon.png" usemap="#socialmap">
-				
-		</div>
-		<img class="island" src="img/island.png" />
+    <div class="seashore">
+			<div class="social_baloon">
+				<img src="img/social_baloon.png" alt="Social" usemap="#socailmap" hidefocus="true" id="socail"/>
+				<map name="socailmap" id="socailmap">
+				    <area alt="twitter" title="twitter" href="https://twitter.com" shape="poly" coords="137,192,120,204,121,220,130,229,143,232,154,223,158,211,154,199" />
+
+				    <area alt="facebook" title="facebook" href="https://www.facebook.com/MaffickNITB" shape="poly" coords="128,237,116,243,111,254,114,267,123,273,134,276,143,272,149,262,147,248,142,241" />
+
+				    <area alt="youtube" title="youtube" href="https://www.youtube.com" shape="poly" coords="116,280,104,286,97,293,96,304,101,316,109,324,120,324,128,316,133,307,136,298,128,286" />
+
+				    <area alt="google+" title="google+" href="https://plus.google.com/" shape="poly" coords="94,327,80,330,72,342,72,355,78,362,89,367,99,366,106,359,110,348,110,337" />
+				</map>
+					
+			</div>
+			
 	</div>
 
-	
-
+	<div class="sea">
+		<img class="island" src="img/island.png" />
 		<div class="wave1"></div>
 		<img class="boat" src="img/tboat.png" />
 		<div class="wave2"></div>
+		<div id="cssmenu">
+				<ul>
+				   <li class='active'><a href='#home'><span>Home</span></a></li>
+				   <li><a href='#events'><span>Events</span></a></li>
+				   <li><a href='#registration'><span>Registration</span></a></li>
+				   <li><a href='#pronites'><span>Pro Nites</span></a></li>
+				   <li><a href='#socialcause'><span>Social Cause</span></a></li>
+				   <li><a href='#contact'><span>Contact Us</span></a></li>
+				   <li><a><span id="bhome"></span></a></li>
+				</ul>
+			</div>
 	</div>
 </body>
 </html>

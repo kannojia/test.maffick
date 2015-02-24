@@ -1,0 +1,25 @@
+/*
+	z-index range 9001-9500
+*/
+@media all and (min-width: 1400px) {
+	#socialcause{
+		background-image: url(../img/comingsoon/bg.jpg);
+		opacity: 1;
+		z-index: 7100;
+		background-repeat: no-repeat;
+		height: 100%;
+		
+	}
+	
+}
+
+@media all and (max-width: 1399px) {
+	#socialcause{
+		background-image: url(../img/comingsoon/bg.jpg);
+		opacity: 1;
+		z-index: 7100;
+		background-repeat: no-repeat;
+		height: 100%;
+		margin-top: 0%;
+	}
+}

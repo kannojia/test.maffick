@@ -3,10 +3,11 @@
 	width: 930px;
 	height: 100%;
 	float: left;
-	padding-left: 30px;
+	/*padding-left: 30px;*/
 	padding-right: 1040px;
 	/*padding-top: 45px;*/
-	background-color:rgba(255,0,0,0);	/* Make panel Transparent */
+	background-color:rgba(255,0,0,1);	/* Make panel Transparent */
+	z-index: 10000;
 }
 		
 #banner {
@@ -23,4 +24,9 @@
 #banner ul li {
 	display: inline;
 	margin-right: 30px;
+}
+
+#bottommenu{
+	position: fixed;
+	height: 50%;
 }

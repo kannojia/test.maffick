@@ -1,5 +1,5 @@
 
-/* ===== CSS RESET STARTS =====*/
+/* ========= CSS RESET STARTS =========*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -50,7 +50,7 @@ img {
   -webkit-user-drag: none;
 }
 
-/*======= RESET ENDS HERE =====*/
+/*========= CSS RESET ENDS HERE =========*/
 
 html {
 	height: 100%;
@@ -59,7 +59,7 @@ html {
 body {
 	width: 12000px;
 	height: 100%;
-	overflow-y: hidden;
+	overflow: hidden;
 }
 
 header {
@@ -82,27 +82,32 @@ section {
 	height: 100%;
 }
 
+img#socail, map area{
+    outline: none;
+}
+
 #home {
 	background-image: url('../img/bg.png');
 	background-size: 2000px 100%;
 }
 
 #events {
-	background-color: blue;
+	background-image: url('../img/bg.png');
+	background-size: 2000px 100%;
 }
 
 .sun {
 	position: absolute;
 	top: -160px;
 	left: -140px;
-	z-index: -1;
+	z-index: 0;
 }
 
 .manitlogo {
 	position: absolute;
 	right:10px;
 	top:10px;
-	width: 80px;
+	width: 100px;
 	height: auto;
 }
 
@@ -112,10 +117,10 @@ section {
 	left: 4%;
 	z-index: 31;
 	width: 20%;
-	-webkit-animation: cloudmotion1 3s linear infinite;
-	-moz-animation: cloudmotion1 3s linear infinite;
-	-o-animation: cloudmotion1 3s linear infinite;
-	animation: cloudmotion1 3s linear infinite;
+	-webkit-animation: cloudmotion1 4s linear 0.3s infinite;
+	   -moz-animation: cloudmotion1 4s linear 0.3s infinite;
+		 -o-animation: cloudmotion1 4s linear 0.3s infinite;
+			animation: cloudmotion1 4s linear 0.3s infinite;
 }
 
 .cloud2 {
@@ -125,9 +130,9 @@ section {
 	z-index: 29;
 	width: 20%;
 	-webkit-animation: cloudmotion2 3.5s linear infinite;
-	-moz-animation: cloudmotion2 3.5s linear infinite;
-	-o-animation: cloudmotion2 3.5s linear infinite;
-	animation: cloudmotion2 3.5s linear infinite;
+	   -moz-animation: cloudmotion2 3.5s linear infinite;
+		 -o-animation: cloudmotion2 3.5s linear infinite;
+			animation: cloudmotion2 3.5s linear infinite;
 }
 
 .cloud3 {
@@ -136,19 +141,17 @@ section {
 	left: 80%;
 	z-index: 29;
 	width: 10%;
-	-webkit-animation: cloudmotion3 2.8s linear 0.3s infinite;
-	-moz-animation: cloudmotion3 2.8s linear 0.3s infinite;
-	-o-animation: cloudmotion3 2.8s linear 0.3s infinite;
-	animation: cloudmotion3 2.8s linear 0.3s infinite;
+	-webkit-animation: cloudmotion3 2.8s linear 0.2s infinite;
+	   -moz-animation: cloudmotion3 2.8s linear 0.2s infinite;
+		 -o-animation: cloudmotion3 2.8s linear 0.2s infinite;
+			animation: cloudmotion3 2.8s linear 0.2s infinite;
 }
 
-.home_info_box img {
+.maffickBanner img {
 	position: absolute;
 	left: 12%;
 	top: 13%;
 	z-index: 30;
-	width:600px;
-	height:auto;
 }
 
 
@@ -156,7 +159,7 @@ section {
 
 #menucontainer{
 	position: absolute;
-	top:14%;
+	top:18%;
     /*width: 16.62%;*/
     width: 22%;
     height: 45%;
@@ -211,8 +214,9 @@ section {
 
 
 .box_property{
-	/* menu regio has been allocated z-index props
+	/* menu region has been allocated z-index props
 	between 1500 - 1600 */
+	position: relative;
 	z-index: 1500;
 	margin-top: 1%;
 	margin-left: 3px;
@@ -239,44 +243,45 @@ section {
 }
 
 #box1{
-	transition: all .2s ease-in-out;
+	transition: all .3s ease-in-out;
     background-color: #e89df1;
 }
 
 #box2{
-	transition: all .2s ease-in-out;
+	transition: all .3s ease-in-out;
 	background-color: #98d6e3;
 }
 
 #box3{
-	transition: all .2s ease-in-out;
+	transition: all .3s ease-in-out;
 	background-color: #ffa473;
 }
 
 
 #box4{
-	transition: all .2s ease-in-out;
+	transition: all .3s ease-in-out;
 	background-color: #f8dba8;
 }
 
 
 #box5{
-	transition: all .2s ease-in-out;
+	transition: all .3s ease-in-out;
 	background-color: #000000;
 }
 
 
-#box1:hover,#box2:hover,#box3:hover,#box4:hover,#box5:hover,.box_property:hover{
+/*#box1:hover,#box2:hover,#box3:hover,#box4:hover,#box5:hover,.box_property:hover{
 	z-index:1501;
     transform: scale(1.5);
 
-}
+}*/
 
 .boxicon{
 	height: 95%;
 	margin-left: 15%;
 	margin-top: 2%;
 	margin-bottom: 3%;
+	transition: all .3s ease-in-out;
 }
 .boxicon:hover{
 	/*width: 300px;
@@ -284,9 +289,8 @@ section {
 	margin-top: 20px;
 	margin-left: 20%;*/
 }
+
 /* ========== menu hovercraft ends ============= */
-
-
 
 
 .seashore {
@@ -302,15 +306,17 @@ section {
 .island {
 	position: absolute;
 	left: 0%;
-	bottom: 15px;
+	bottom: 12px;
+	width: 35%;
+	height: auto;
 	z-index: 1002;
 }
 
 .social_baloon {
 	position: absolute;
-	left:0%;
+	left:-2%;
 	top: 14%;
-	z-index: 991;
+	z-index: 1003;
 	-webkit-animation: movebaloon 3s linear 0.3s infinite;
 	-moz-animation: movebaloon 3s linear 0.3s infinite;
 	-o-animation: movebaloon 3s linear 0.3s infinite;
@@ -320,9 +326,9 @@ section {
 .sea {
 	position: fixed;
 	width: 100%;
-	height: 100%;
+	height: 20%;
 	bottom: 0%;
-	overflow:hidden;
+	/*overflow:hidden;*/
 }
 
 .wave1 {
@@ -330,11 +336,11 @@ section {
 	background-image: url('../img/w1.png');
 	background-repeat: repeat-x;
 	/*top:0px;*/
-	bottom: 0%;
+	bottom: -118px;
 	left: -10%;
 	z-index: 985;
 	width: 8000px;
-	height: 10%;
+	height: 228px;
 	-webkit-animation: wavemotion1 6s linear infinite ;
 	-moz-animation: wavemotion1 6s linear infinite ;
 	-o-animation: wavemotion1 6s linear infinite ;
@@ -344,11 +350,11 @@ section {
 .wave2 {
 	position: absolute;
 	/*top: 8px;*/
-	left: -8%;
-	bottom: -2%;
+	left: -6%;
+	bottom: -114px;
 	z-index: 1004;
 	width: 8000px;
-	height: 10%;
+	height: 228px;
 	background-image: url('../img/w2.png');
 	background-repeat: repeat-x;
 	-webkit-transform: translateZ(80px);
@@ -364,8 +370,10 @@ section {
 
 .boat {
 	position: fixed;
-	bottom: -4%;
+	bottom: 30px;
 	left: 75%;
+	width: 15%;
+	height: auto;
 	-webkit-transform: rotate(45deg);
 	transform: rotate(45deg);
 	z-index: 1003;
@@ -376,17 +384,134 @@ section {
 }
 
 
+/* ==================== bottom menu hidden =================*/
+#cssmenu {
+  position: absolute;
+  border: 0px solid #133e40;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  width: 70%;
+  height: 7%;
+  z-index: 10000;
+  left: 15%;
+  top:100%;
+}
+#cssmenu ul,#cssmenu li,#cssmenu a {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1;
+  font-family: 'Lato', sans-serif;
+}
+#cssmenu ul {
+  zoom: 1;
+  /***  comment off this for transparent bg **/
+  background: #36b0b6;
+  background: -moz-linear-gradient(top, #36b0b6 0%, #2a8a8f 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #36b0b6), color-stop(100%, #2a8a8f));
+  background: -webkit-linear-gradient(top, #36b0b6 0%, #2a8a8f 100%);
+  background: -o-linear-gradient(top, #36b0b6 0%, #2a8a8f 100%);
+  background: -ms-linear-gradient(top, #36b0b6 0%, #2a8a8f 100%);
+  background: linear-gradient(top, #36b0b6 0%, #2a8a8f 100%);
+  /*******************************************/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@top-color', endColorstr='@bottom-color', GradientType=0);
+  padding: 5px 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+#cssmenu ul:before {
+  content: '';
+  display: block;
+}
+#cssmenu ul:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#cssmenu li {
+  float: left;
+  margin: 0% 0% 0% 6%;
+  border: 0px solid;
+}
+#cssmenu li a {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding: 8px 15px 9px 15px;
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid transparent;
+  font-size: 16px;
+}
+#cssmenu li.active {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #36b0b6;
+}
+#cssmenu li.active a {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+  background: #1e6468;
+  border: 1px solid #133e40;
+  -moz-box-shadow: inset 0 5px 10px #133e40;
+  -webkit-box-shadow: inset 0 5px 10px #133e40;
+  box-shadow: inset 0 5px 10px #133e40;
+}
+#cssmenu li:hover {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #36b0b6;
+}
+#cssmenu li:hover a {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+  background: #1e6468;
+  border: 1px solid #133e40;
+  -moz-box-shadow: inset 0 5px 10px #133e40;
+  -webkit-box-shadow: inset 0 5px 10px #133e40;
+  box-shadow: inset 0 5px 10px #133e40;
+}
+/*================================================*/
+
+
+
 
 /*=============================
  *	Animation KEYFRAMES here
  *==============================*/
+
+/*------Baloon Movements------*/
 
 @-webkit-keyframes movebaloon {
 	0% {
 		-webkit-transform: rotate(0deg);
 		-webkit-transform-origin: bottom left;
 	}
-	50%% {
+	50% {
 		-webkit-transform: rotate(5deg);
 		-webkit-transform-origin: bottom left;
 	}
@@ -401,7 +526,7 @@ section {
 		-moz-transform: rotate(0deg);
 		-moz-transform-origin: bottom left;
 	}
-	50%% {
+	50% {
 		-moz-transform: rotate(5deg);
 		-moz-transform-origin: bottom left;
 	}
@@ -416,7 +541,7 @@ section {
 		-ms-transform: rotate(0deg);
 		-ms-transform-origin: bottom left;
 	}
-	50%% {
+	50% {
 		-ms-transform: rotate(5deg);
 		-ms-transform-origin: bottom left;
 	}
@@ -431,7 +556,7 @@ section {
 		-o-transform: rotate(0deg);
 		-o-transform-origin: bottom left;
 	}
-	50%% {
+	50% {
 		-o-transform: rotate(5deg);
 		-o-transform-origin: bottom left;
 	}
@@ -446,7 +571,7 @@ section {
 		transform: rotate(0deg);
 		transform-origin: bottom left;
 	}
-	50%% {
+	50% {
 		transform: rotate(5deg);
 		transform-origin: bottom left;
 	}
@@ -457,6 +582,8 @@ section {
 
 }
 
+/*--------- Wave Movements---------*/
+/*------------- Wave1 -------------*/
 
 @-webkit-keyframes wavemotion1 {
 	from { -webkit-transform: rotate(0deg) translateX(12px) rotate(0deg); }
@@ -478,6 +605,8 @@ section {
 	to   { transform: rotate(360deg) translateX(12px) rotate(-360deg); }
 }
 
+/*------------- Wave2 -------------*/
+
 @-webkit-keyframes wavemotion2 {
 	from { -webkit-transform: rotate(0deg) translateX(8px) rotate(0deg); }
 	to   { -webkit-transform: rotate(360deg) translateX(8px) rotate(-360deg); }
@@ -498,21 +627,75 @@ section {
 	to   { transform: rotate(360deg) translateX(8px) rotate(-360deg); }
 }
 
+/*------------- Cloud Motions -------------*/
+/*-------------------Cloud 1 --------------*/
+
 @-webkit-keyframes cloudmotion1 {
-	0% {-webkit-transform: rotate(0deg) translateX(10px) rotate(0deg);}
-	100%{-webkit-transform: rotate(360deg) translateX(10px) rotate(-360deg);}
+	0% {-webkit-transform: rotate(0deg) translateY(6px) translateX(8px) rotate(0deg);}
+	100%{-webkit-transform: rotate(360deg) translateY(6px) translateX(8px) rotate(-360deg);}
 }
+
+@-moz-keyframes cloudmotion1 {
+	0% {-moz-transform: rotate(0deg) translateY(6px) translateX(8px) rotate(0deg);}
+	100%{-moz-transform: rotate(360deg) translateY(6px) translateX(8px) rotate(-360deg);}
+}
+
+@-o-keyframes cloudmotion1 {
+	0% {-o-transform: rotate(0deg) translateY(6px) translateX(8px) rotate(0deg);}
+	100%{-o-transform: rotate(360deg) translateY(6px) translateX(8px) rotate(-360deg);}
+}
+
+@keyframes cloudmotion1 {
+	0% {transform: rotate(0deg) translateY(6px) translateX(8px) rotate(0deg);}
+	100%{transform: rotate(360deg) translateY(6px) translateX(8px) rotate(-360deg);}
+}
+
+/*-------------------Cloud 2 --------------*/
 
 @-webkit-keyframes cloudmotion2 {
-0% {-webkit-transform: rotate(0deg) translateX(10px) rotate(0deg);}
-	100%{-webkit-transform: rotate(360deg) translateX(10px) rotate(-360deg);}
+	0% {-webkit-transform: rotate(0deg) translateY(6px) translateX(8px) rotate(0deg);}
+	100%{-webkit-transform: rotate(360deg) translateY(6px) translateX(8px) rotate(-360deg);}
 }
+
+@-moz-keyframes cloudmotion2 {
+	0% {-moz-transform: rotate(0deg) translateY(6px) translateX(8px) rotate(0deg);}
+	100%{-moz-transform: rotate(360deg) translateY(6px) translateX(8px) rotate(-360deg);}
+}
+
+@-o-keyframes cloudmotion2 {
+	0% {-o-transform: rotate(0deg) translateY(6px) translateX(8px) rotate(0deg);}
+	100%{-o-transform: rotate(360deg) translateY(6px) translateX(8px) rotate(-360deg);}
+}
+
+@keyframes cloudmotion2 {
+	0% {transform: rotate(0deg) translateY(6px) translateX(8px) rotate(0deg);}
+	100%{transform: rotate(360deg) translateY(6px) translateX(8px) rotate(-360deg);}
+}
+
+/*-------------------Cloud 3 --------------*/
 
 @-webkit-keyframes cloudmotion3 {
-	0% {-webkit-transform: rotate(0deg) translateX(8px) rotate(0deg);}
-	100%{-webkit-transform: rotate(360deg) translateX(8px) rotate(-360deg);}
+	0% {-webkit-transform: rotate(0deg) translateY(6px) translateX(8px) rotate(0deg);}
+	100%{-webkit-transform: rotate(360deg) translateY(6px) translateX(8px) rotate(-360deg);}
 }
 
+@-moz-keyframes cloudmotion3 {
+	0% {-moz-transform: rotate(0deg) translateY(6px) translateX(8px) rotate(0deg);}
+	100%{-moz-transform: rotate(360deg) translateY(6px) translateX(8px) rotate(-360deg);}
+}
+
+@-o-keyframes cloudmotion3 {
+	0% {-o-transform: rotate(0deg) translateY(6px) translateX(8px) rotate(0deg);}
+	100%{-o-transform: rotate(360deg) translateY(6px) translateX(8px) rotate(-360deg);}
+}
+
+@keyframes cloudmotion3 {
+	0% {transform: rotate(0deg) translateY(6px) translateX(8px)translateY(6px) translateX(8px) rotate(0deg);}
+	100%{transform: rotate(360deg) translateY(6px) translateX(8px) rotate(-360deg);}
+}
+
+
+/*---------------- Boat Movements ----------- */
 
 @-webkit-keyframes boatmotion {
 	0%   {-webkit-transform: rotate(0deg) translateX(15px) rotate(0deg);}
