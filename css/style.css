@@ -91,18 +91,6 @@ img#socail, map area{
 	background-size: 2000px 100%;
 }
 
-#events {
-	background-image: url('../img/bg.png');
-	background-size: 2000px 100%;
-}
-
-.sun {
-	position: absolute;
-	top: -160px;
-	left: -140px;
-	z-index: 0;
-}
-
 .manitlogo {
 	position: absolute;
 	right:10px;
@@ -115,7 +103,7 @@ img#socail, map area{
 	position: absolute;
 	top: -12%;
 	left: 4%;
-	z-index: 31;
+	z-index: 1102;
 	width: 20%;
 	-webkit-animation: cloudmotion1 4s linear 0.3s infinite;
 	   -moz-animation: cloudmotion1 4s linear 0.3s infinite;
@@ -127,7 +115,7 @@ img#socail, map area{
 	position: absolute;
 	top: -14%;
 	left: 50%;
-	z-index: 29;
+	z-index: 999;
 	width: 20%;
 	-webkit-animation: cloudmotion2 3.5s linear infinite;
 	   -moz-animation: cloudmotion2 3.5s linear infinite;
@@ -139,7 +127,7 @@ img#socail, map area{
 	position: absolute;
 	top: -12%;
 	left: 80%;
-	z-index: 29;
+	z-index: 1105;
 	width: 10%;
 	-webkit-animation: cloudmotion3 2.8s linear 0.2s infinite;
 	   -moz-animation: cloudmotion3 2.8s linear 0.2s infinite;
@@ -147,11 +135,74 @@ img#socail, map area{
 			animation: cloudmotion3 2.8s linear 0.2s infinite;
 }
 
-.maffickBanner img {
+#homeBanner {
 	position: absolute;
-	left: 12%;
-	top: 13%;
-	z-index: 30;
+	top: 15%;
+	left: 18%;
+	z-index: 1100;
+	height: 62%;
+	width: 50%;
+}
+
+#holderMain{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/tab.png");
+	overflow: hidden;
+}
+
+#overflow-wrapper {
+	position: absolute;
+	top:0;
+	left:0;
+	width: 400%;
+	height: 100%;
+	overflow-y: hidden;
+	z-index: 1101;
+}
+
+.holder {
+	width: 24%;	
+	height: 84%;	
+	padding: 0.5%;	
+	float: left;
+}
+
+#hometabs {
+	position: absolute;
+	width: 100%;
+	bottom: 1%;
+	left: 0%;
+	z-index: 1110;
+}
+
+.tab {
+	float: left;
+	height: 40px;
+	width: 25%;
+	opacity: 0.8;
+}
+
+.tab:hover {opacity: 1;}
+
+.heading {
+	font-family: walkway_bold, sans-serif;
+	font-size: 30px;
+	color: #ffffff;
+	display: block;
+	font-weight: bold;
+}
+
+#aboutus_inner {
+	font-family: walkway_bold, sans-serif;
+	text-align: justify;
+	width: 97%;
+	padding: 1% 1.5% 1.5% 1.5%;
+	color: #ffffff;
+	font-size: 21px;
 }
 
 
@@ -283,12 +334,12 @@ img#socail, map area{
 	margin-bottom: 3%;
 	transition: all .3s ease-in-out;
 }
-.boxicon:hover{
-	/*width: 300px;
+/*.boxicon:hover{
+	width: 300px;
 	height: 117px;
 	margin-top: 20px;
-	margin-left: 20%;*/
-}
+	margin-left: 20%;
+}*/
 
 /* ========== menu hovercraft ends ============= */
 
@@ -297,7 +348,7 @@ img#socail, map area{
 	position: absolute;
 	left:0%;
 	bottom: 0%;
-	width: 50%;
+	width: 40%;
 	height: 600px;
 	z-index:990;
 	overflow: hidden;
@@ -336,7 +387,7 @@ img#socail, map area{
 	background-image: url('../img/w1.png');
 	background-repeat: repeat-x;
 	/*top:0px;*/
-	bottom: -118px;
+	bottom: -112px;
 	left: -10%;
 	z-index: 985;
 	width: 8000px;
@@ -351,7 +402,7 @@ img#socail, map area{
 	position: absolute;
 	/*top: 8px;*/
 	left: -6%;
-	bottom: -114px;
+	bottom: -118px;
 	z-index: 1004;
 	width: 8000px;
 	height: 228px;
@@ -370,7 +421,7 @@ img#socail, map area{
 
 .boat {
 	position: fixed;
-	bottom: 30px;
+	bottom: 22px;
 	left: 75%;
 	width: 15%;
 	height: auto;
@@ -386,17 +437,17 @@ img#socail, map area{
 
 /* ==================== bottom menu hidden =================*/
 #cssmenu {
-  position: absolute;
+  position: fixed;
   border: 0px solid #133e40;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  width: 70%;
-  height: 7%;
+  width: 75%;
+  height: 40%;
   z-index: 10000;
-  left: 15%;
+  left: 10%;
   top:100%;
 }
 #cssmenu ul,#cssmenu li,#cssmenu a {
@@ -410,6 +461,8 @@ img#socail, map area{
 #cssmenu ul {
   zoom: 1;
   /***  comment off this for transparent bg **/
+  background: rgba(54,176,182,0.5);
+  /*
   background: #36b0b6;
   background: -moz-linear-gradient(top, #36b0b6 0%, #2a8a8f 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #36b0b6), color-stop(100%, #2a8a8f));

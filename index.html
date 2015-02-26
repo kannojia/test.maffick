@@ -5,7 +5,7 @@
 <meta name="description" content="Maffick 2015 : Fièsta de Cómico. Maffick is an annual Cultural Festival of Maulana Azad National Institute of Technology, Bhopal MP." />
 <meta name="author" content="Maffick Web Developer Team" />
 
-<title>Maffick 2015::Fièsta de Cómico</title>
+<title>Maffick 2015 :: Fièsta de Cómico</title>
 
 <link rel="icon" type="image/png" href="img/manitlogo.png" />
 
@@ -17,6 +17,9 @@
 <link rel="stylesheet" type="text/css" href="css/registration.css"/>
 <link rel="stylesheet" type="text/css" href="css/pronites.css"/>
 <link rel="stylesheet" type="text/css" href="css/socialcause.css"/>
+<link rel="stylesheet" type="text/css" href="css/contact.css"/>
+<link rel="stylesheet" type="text/css" href="css/preloader.css"/>
+<!--<link rel="stylesheet" type="text/css" href="css/slider.css" />-->	
  <!--<link rel="stylesheet" href="css/puppets.css" type="text/css" />-->
 
 <!---------------- Scripts ------------------>
@@ -30,7 +33,16 @@
 </head>
  
 <body>
-		
+<!--
+---------------------------------------------------------------------
+---|@@@\--/@@@|-----/@@\-----||@@@--||@@@------||@@@\---||--//-------
+---|----\/----|----/----\----||-----||-----@@--||---@---||-//--------
+---|-|\----/|-|---/--==--\---||@@---||@@-------||-------||//---------
+---|-|-\__/-|-|--|--/@@\--|--||-----||-----||--||---@---||\\---------
+---|_|------|_|--|_/----\_|--||-----||-----||--||@@@/---||-\\--------
+---------------------------------------------------------------------
+-------------------------------------------Jaiwardhan-& Abhishek--B)-
+-->	
 	<section>
 		
 		<article id="home" class="panel">
@@ -49,36 +61,61 @@
 
 		
 			<p> .</p>
-			<div class="maffickBanner">
-				<img src="img/maffick.png" style="z-index:5" />
+			<div id="homeBanner">
+				<div id="holderMain">
+					<div id="overflow-wrapper">
+						<a href="#"><img id="intro" class ="holder" src="img/maffick.png" /></a>
+						<a href="#"><div id="aboutus" class ="holder">
+							<div id="aboutus_inner">
+							<p class="heading">MAFFICK 2015 'FIESTA DE COMICO'</p><br>
+							<p>'Maffick' has always been one of the biggest cultural fests of central India. Students from all over teh nation come and participate in the plethora of socia-cultural events and activities each year. From electrifying cultural events to professionally organized workshops for developing talents, to sparkling 'Pronites',studded with teh jewels of our entertainment industry, we organize events from all genres and walks of culture. With Maffick 2015, 'Fiesta de Comico' we promise a 4 day long cultural extravaganza, with an explosion of talent, challenging competitions and exciting prizes, an experience to cherish for our visitors and participants alike!</p>
+						</div></div></a>
+						<a href="#"><div id="gallery" class ="holder"><p class="heading">Coming Soon</p></div></a>
+						<a href="#"><div id="teaser" class="holder"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/OF06QA32DYk" frameborder="0" allowfullscreen></iframe></div35/a>
+					</div>
+				</div>
+
+
+				<div id="hometabs">
+					<a href="#intro"><img class="tab" src="img/tab1.png" /></a>
+					<a href="#aboutus"><img class="tab" src="img/tab2.png" /></a>
+					<a href="#gallery"><img class="tab" src="img/tab3.png" /></a>
+					<a href="#teaser"><img class="tab" src="img/tab4.png" /></a>
+				</div>
 			</div>
+			<!--<div class="maffickBanner">
+				<img src="img/maffick.png" style="z-index:5" />
+			</div>-->
 		</article>
 
 
 		<!-- --------- EVENTS ------------- -->
 		<article id="events" class="panel">
+			<div id="coming_soon_events">
+				<img src="img/comingsoon/hangon.png" />
+			</div>
 			<div id="panelcontainer">
 				<!--
 				-->
 				<div class="panelbox" id="pbox1">
-					<a href="#event1"><img src="img/events/panels/new/panboards/first.png" style="height:100px; width:105px; top:-100px; " id="board1" class="board"/></a>
-					<img src="img/events/panels/new/first.png" id="firstpanel" class="panels" >
+					<a href="#event1"><img src="img/events/panels/new/panboards/first.png" style="height:100px; width:105px; top:-100px; " id="board1" class="board"/>
+					<img src="img/events/panels/new/first.png" id="firstpanel" class="panels" ></a>
 				</div>
 				<div class="panelbox" id="pbox2">
-					<a href="#event2"><img src="img/events/panels/new/panboards/second.png" style="height:100px; width:106px; top:-100px;" id="board2" class="board"/></a>
-					<img src="img/events/panels/new/second.png" id="secondpanel" class="panels"/>
+					<a href="#event2"><img src="img/events/panels/new/panboards/second.png" style="height:100px; width:106px; top:-100px;" id="board2" class="board"/>
+					<img src="img/events/panels/new/second.png" id="secondpanel" class="panels"/></a>
 				</div>
 				<div class="panelbox" id="pbox3">
-					<a href="#event3"><img src="img/events/panels/new/panboards/third.png" style="height:100px; width:109px; top:-100px;" id="board3" class="board"/></a>
-					<img src="img/events/panels/new/third.png" id="thirdpanel" class="panels" />
+					<a href="#event3"><img src="img/events/panels/new/panboards/third.png" style="height:100px; width:109px; top:-100px;" id="board3" class="board"/>
+					<img src="img/events/panels/new/third.png" id="thirdpanel" class="panels" /></a>
 				</div>
 				<div class="panelbox" id="pbox4">
-					<a href="#event4"><img src="img/events/panels/new/panboards/fourth.png" style="height:100px; width:151px; top:-100px;" id="board4" class="board"/></a>
-					<img src="img/events/panels/new/fourth.png" id="fourthpanel" class="panels" />
+					<a href="#event4"><img src="img/events/panels/new/panboards/fourth.png" style="height:100px; width:151px; top:-100px;" id="board4" class="board"/>
+					<img src="img/events/panels/new/fourth.png" id="fourthpanel" class="panels" /></a>
 				</div>
 				<div class="panelbox" id="pbox5">
-					<a href="#event5"><img src="img/events/panels/new/panboards/fifth.png" style="height:100px; width:114px; top:-100px;" id="board5" class="board"/></a>
-					<img src="img/events/panels/new/fifth.png" id="fifthpanel" class="panels" />
+					<a href="#event5"><img src="img/events/panels/new/panboards/fifth.png" style="height:100px; width:114px; top:-100px;" id="board5" class="board"/>
+					<img src="img/events/panels/new/fifth.png" id="fifthpanel" class="panels" /></a>
 				</div>
 			</div>
 		</article>
@@ -95,15 +132,15 @@
 				</div>
 				<center><a href="#"><img src="img/registration/regbutton.png" style="margin-top:1%;" id="regbutton"/></a></center>
 				<div id="reg_embeddform">
-					<center><iframe src="https://docs.google.com/forms/d/1ed4DV1Nn2gkAB7M2q_kbspFDWWPQ9Rb4g9x-lcL8TzA/viewform?embedded=true" width="60%" height="400px" frameborder="0" marginheight="0" marginwidth="0" id="formframe">Loading...</iframe></center>
+					<iframe src="https://docs.google.com/forms/d/16ovGJJGDzy5QYdOeizomWbVzfMmWv5oRDLbeMM8zNg0/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 				</div>
 			</div>
 		</article>
 		
 
-		<!-- ------------- pro nites ---------- -->
+		<!-- ------------- pronites ---------- -->
 		<article id="pronites" class="panel">
-			<h3> </h3>
+			<h3></h3>
 		</article>
 		
 
@@ -114,13 +151,203 @@
 		
 
 		<!-- ---------- contact --------------- -->
-		<article id="contact" class="panel">
-			<h3>Contact Us</h3>
+			<article id="contact" class="panel">
+			
+			<!-- step 1 : create container -->
+			<div id="contactcontainer">
+				<!-- step2: create a row -->
+				<!-- ----------------- web design ------------ -->
+				<div class="cpanelrow">
+					<!-- step 3(a): insert row header -->
+					<img src="img/contact/webdesigners.png" class="cpanelheader"/>
+					<!-- step 3(b): insert people -->
+					<div class="people">
+						<!-- step 3(b)(a): insert image -->
+						<div class="photoid">
+							<img src="img/contact/people/web/jaiwardhan.png">
+						</div>
+						<!-- step 3(b)(b): insert details -->
+						<div class="naampata">
+							<center>Jaiwardhan</center><br/><center>+91-7389710737</center>
+						</div>
+					</div>
+					<!-- step 3(b): insert people -->
+					<div class="people">
+						<!-- step 3(b)(a): insert image -->
+						<div class="photoid">
+							<img src="img/contact/people/web/abhishek.png">
+						</div>
+						<!-- step 3(b)(b): insert details -->
+						<div class="naampata">
+							<center>Abhishek</center><br/><center>+91-9425973837</center>
+						</div>
+					</div>
+					<!-- step 3(b): insert people -->
+						<div class="people">
+							<!-- step 3(b)(a): insert image -->
+							<div class="photoid">
+								<img src="img/contact/people/web/rohit.png">
+							</div>
+							<!-- step 3(b)(b): insert details -->
+							<div class="naampata">
+								<center>Rohit</center><br/><center>+91-9753204098</center>
+							</div>
+						</div>
+				</div>
+				<!-- ---------------- COUNCIL ----------------- -->
+				<div class="cpanelrow">
+					<!-- step 3(a): insert row header -->
+					<img src="img/contact/council.png" class="cpanelheader"/>
+					<!-- step 3(b): insert people -->
+					<div class="people">
+						<!-- step 3(b)(a): insert image -->
+						<div class="photoid">
+							<img src="img/contact/people/council/harshits.png">
+						</div>
+						<!-- step 3(b)(b): insert details -->
+						<div class="naampata">
+							<center>Harshit S.</center><br/><center>+91-7869060581</center>
+						</div>
+					</div>
+					<!-- step 3(b): insert people -->
+					<div class="people">
+						<!-- step 3(b)(a): insert image -->
+						<div class="photoid">
+							<img src="img/contact/people/trail.png">
+						</div>
+						<!-- step 3(b)(b): insert details -->
+						<div class="naampata">
+							<center>Harsh</center><br/><center>+91-8602269785</center>
+						</div>
+					</div>
+					<!-- step 3(b): insert people -->
+					<div class="people">
+						<!-- step 3(b)(a): insert image -->
+						<div class="photoid">
+							<img src="img/contact/people/council/aqueel.png">
+						</div>
+						<!-- step 3(b)(b): insert details -->
+						<div class="naampata">
+							<center>Aqueel</center><br/><center>+91-8602269785</center>
+						</div>
+					</div>
+					<!-- step 3(b): insert people -->
+					<div class="people">
+						<!-- step 3(b)(a): insert image -->
+						<div class="photoid">
+							<img src="img/contact/people/council/soumya.png">
+						</div>
+						<!-- step 3(b)(b): insert details -->
+						<div class="naampata">
+							<center>Soumya</center><br/><center>+91-9685407808</center>
+						</div>
+					</div>
+				</div>
+				<!-- ----------------- core team -------------- -->
+				<div class="cpanelrow">
+						<!-- step 3(a): insert row header -->
+						<img src="img/contact/coreteam.png" class="cpanelheader"/>
+						<!-- step 3(b): insert people -->
+						<div class="people">
+							<!-- step 3(b)(a): insert image -->
+							<div class="photoid">
+								<img src="img/contact/people/core/akash.png">
+							</div>
+							<!-- step 3(b)(b): insert details -->
+							<div class="naampata">
+								<center>Akash</center><br/><center>+91-9479302440</center>
+							</div>
+						</div>
+						<!-- step 3(b): insert people -->
+						<div class="people">
+							<!-- step 3(b)(a): insert image -->
+							<div class="photoid">
+								<img src="img/contact/people/core/diwakar.png">
+							</div>
+							<!-- step 3(b)(b): insert details -->
+							<div class="naampata">
+								<center>Diwakar</center><br/><center>+91-8305911351</center>
+							</div>
+						</div>
+						<!-- step 3(b): insert people -->
+						<div class="people">
+							<!-- step 3(b)(a): insert image -->
+							<div class="photoid">
+								<img src="img/contact/people/core/lokesh.png">
+							</div>
+							<!-- step 3(b)(b): insert details -->
+							<div class="naampata">
+								<center>Lokesh</center><br/><center>+91-8989277167</center>
+							</div>
+						</div>
+						<!-- step 3(b): insert people -->
+						<div class="people">
+							<!-- step 3(b)(a): insert image -->
+							<div class="photoid">
+								<img src="img/contact/people/core/rajesh.png">
+							</div>
+							<!-- step 3(b)(b): insert details -->
+							<div class="naampata">
+								<center>Rajesh</center><br/><center>+91-8109498366</center>
+							</div>
+						</div>
+				</div>
+				<!-- ---------------- Creative team ----------- -->
+				<div class="cpanelrow">
+					<!-- step 3(a): insert row header -->
+					<img src="img/contact/creative.png" class="cpanelheader"/>
+					<!-- step 3(b): insert people -->
+					<div class="people">
+						<!-- step 3(b)(a): insert image -->
+						<div class="photoid">
+							<img src="img/contact/people/creative/anshul.png">
+						</div>
+						<!-- step 3(b)(b): insert details -->
+						<div class="naampata">
+							<center>Anshul</center><br/><center>+91-9039436572</center>
+						</div>
+					</div>
+					<!-- step 3(b): insert people -->
+					<div class="people">
+						<!-- step 3(b)(a): insert image -->
+						<div class="photoid">
+							<img src="img/contact/people/creative/sawan.png">
+						</div>
+						<!-- step 3(b)(b): insert details -->
+						<div class="naampata">
+							<center>Sawan</center><br/><center>+91-7828782789</center>
+						</div>
+					</div>
+					<!-- step 3(b): insert people -->
+					<div class="people">
+						<!-- step 3(b)(a): insert image -->
+						<div class="photoid">
+							<img src="img/contact/people/creative/sumanyu.png">
+						</div>
+						<!-- step 3(b)(b): insert details -->
+						<div class="naampata">
+							<center>Sumanyu</center><br/><center>+91-9827178903</center>
+						</div>
+					</div>
+					<!-- step 3(b): insert people -->
+					<div class="people">
+						<!-- step 3(b)(a): insert image -->
+						<div class="photoid">
+							<img src="img/contact/people/creative/ankit.png">
+						</div>
+						<!-- step 3(b)(b): insert details -->
+						<div class="naampata">
+							<center>Ankit</center><br/><center>+91-9806563231</center>
+						</div>
+					</div>
+				</div>
+				<div class="cpanelrow">
+				</div>
+			</div>
 		</article>
 
 
-
-	</section>
+	
 
 
 	<div id="menucontainer" class="nbanner">
@@ -159,11 +386,11 @@
 			<div class="social_baloon">
 				<img src="img/social_baloon.png" alt="Social" usemap="#socailmap" hidefocus="true" id="socail"/>
 				<map name="socailmap" id="socailmap">
-				    <area alt="twitter" title="twitter" href="https://twitter.com" shape="poly" coords="137,192,120,204,121,220,130,229,143,232,154,223,158,211,154,199" />
+				    <area alt="twitter" title="twitter" href="https://twitter.com/mafficknitb" shape="poly" coords="137,192,120,204,121,220,130,229,143,232,154,223,158,211,154,199" />
 
-				    <area alt="facebook" title="facebook" href="https://www.facebook.com/MaffickNITB" shape="poly" coords="128,237,116,243,111,254,114,267,123,273,134,276,143,272,149,262,147,248,142,241" />
+				    <area alt="facebook" title="facebook" href="http://www.facebook.com/mafficknitbhopal" shape="poly" coords="128,237,116,243,111,254,114,267,123,273,134,276,143,272,149,262,147,248,142,241" />
 
-				    <area alt="youtube" title="youtube" href="https://www.youtube.com" shape="poly" coords="116,280,104,286,97,293,96,304,101,316,109,324,120,324,128,316,133,307,136,298,128,286" />
+				    <area alt="youtube" title="youtube" href="https://www.youtube.com/channel/UCd_7ag4AJhK9iJt-a8RuBEg" shape="poly" coords="116,280,104,286,97,293,96,304,101,316,109,324,120,324,128,316,133,307,136,298,128,286" />
 
 				    <area alt="google+" title="google+" href="https://plus.google.com/" shape="poly" coords="94,327,80,330,72,342,72,355,78,362,89,367,99,366,106,359,110,348,110,337" />
 				</map>
@@ -179,15 +406,18 @@
 		<div class="wave2"></div>
 		<div id="cssmenu">
 				<ul>
-				   <li class='active'><a href='#home'><span>Home</span></a></li>
-				   <li><a href='#events'><span>Events</span></a></li>
+				   <li><a href='#home'><span>Home</span></a></li>
+				   <li class='active'><a href='#events'><span>Events</span></a></li>
 				   <li><a href='#registration'><span>Registration</span></a></li>
 				   <li><a href='#pronites'><span>Pro Nites</span></a></li>
 				   <li><a href='#socialcause'><span>Social Cause</span></a></li>
 				   <li><a href='#contact'><span>Contact Us</span></a></li>
-				   <li><a><span id="bhome"></span></a></li>
+				   <li class="last"><a><span id="bhome"> </span></a></li>
 				</ul>
-			</div>
+		</div>
 	</div>
+
+	</section>
 </body>
+
 </html>

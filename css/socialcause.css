@@ -4,6 +4,7 @@
 @media all and (min-width: 1400px) {
 	#socialcause{
 		background-image: url(../img/comingsoon/bg.jpg);
+		background-size: 98% 110%; 
 		opacity: 1;
 		z-index: 7100;
 		background-repeat: no-repeat;
@@ -16,6 +17,7 @@
 @media all and (max-width: 1399px) {
 	#socialcause{
 		background-image: url(../img/comingsoon/bg.jpg);
+		background-size: 70% auto;
 		opacity: 1;
 		z-index: 7100;
 		background-repeat: no-repeat;

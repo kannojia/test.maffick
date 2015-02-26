@@ -6,3 +6,7 @@
 	font-family: funsized;
 	src:url(../fonts/funsized.ttf);
 }
+@font-face {
+	font-family: walkway_bold;
+	src:url(../fonts/WalkwayUltraBold.ttf);
+}
