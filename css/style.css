@@ -56,10 +56,20 @@ html {
 	height: 100%;
 }
 
-body {
-	width: 12000px;
-	height: 100%;
-	overflow: hidden;
+@media all and (min-width: 1400px) {
+	body {
+		width: 14090px;
+		height: 100%;
+		overflow: hidden;
+	}
+}
+
+@media all and (max-width: 1399px) {
+	body {
+		width: 12000px;
+		height: 100%;
+		overflow: hidden;
+	}
 }
 
 header {
@@ -138,8 +148,8 @@ img#socail, map area{
 #homeBanner {
 	position: absolute;
 	top: 15%;
-	left: 18%;
-	z-index: 1100;
+	left: 12%;
+	z-index: 1000;
 	height: 62%;
 	width: 50%;
 }
@@ -161,7 +171,7 @@ img#socail, map area{
 	width: 400%;
 	height: 100%;
 	overflow-y: hidden;
-	z-index: 1101;
+	z-index: 1000;
 }
 
 .holder {
@@ -176,7 +186,7 @@ img#socail, map area{
 	width: 100%;
 	bottom: 1%;
 	left: 0%;
-	z-index: 1110;
+	z-index: 1010;
 }
 
 .tab {
@@ -191,7 +201,7 @@ img#socail, map area{
 .heading {
 	font-family: walkway_bold, sans-serif;
 	font-size: 30px;
-	color: #ffffff;
+	color: #222222;
 	display: block;
 	font-weight: bold;
 }
@@ -205,6 +215,11 @@ img#socail, map area{
 	font-size: 21px;
 }
 
+.about-desc {
+	font-family:walkway,serif; 
+	font-size: 22px;
+
+}
 
 /* =========== menu hovercraft :) ============== */
 
@@ -213,7 +228,7 @@ img#socail, map area{
 	top:18%;
     /*width: 16.62%;*/
     width: 22%;
-    height: 45%;
+    height: 54%;
     z-index:10000;
     background-color: rgba(255,255,255,1);
    	right:0px;
@@ -259,7 +274,7 @@ img#socail, map area{
     width: 350px;
     */
     width: 28%;
-    height: 55%;
+    height: 53%;
 }
 
 
@@ -271,7 +286,7 @@ img#socail, map area{
 	z-index: 1500;
 	margin-top: 1%;
 	margin-left: 3px;
-    height: 19.05%;
+    height: 19.0%;
     border-width: 2%;
     border-style: solid;
     -moz-box-shadow:    inset 0 0 15px #999;
@@ -348,8 +363,8 @@ img#socail, map area{
 	position: absolute;
 	left:0%;
 	bottom: 0%;
-	width: 40%;
-	height: 600px;
+	width: 30%;
+	height: 80%;
 	z-index:990;
 	overflow: hidden;
 }
@@ -365,9 +380,9 @@ img#socail, map area{
 
 .social_baloon {
 	position: absolute;
-	left:-2%;
-	top: 14%;
-	z-index: 1003;
+	left: -8%;
+	bottom: 1%;
+	z-index: 1002;
 	-webkit-animation: movebaloon 3s linear 0.3s infinite;
 	-moz-animation: movebaloon 3s linear 0.3s infinite;
 	-o-animation: movebaloon 3s linear 0.3s infinite;
@@ -444,12 +459,13 @@ img#socail, map area{
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  width: 75%;
-  height: 40%;
+  width: 64%;
+  height: 35%;
   z-index: 10000;
-  left: 10%;
+  left: 18%;
   top:100%;
 }
+
 #cssmenu ul,#cssmenu li,#cssmenu a {
   list-style: none;
   margin: 0;
@@ -458,10 +474,11 @@ img#socail, map area{
   line-height: 1;
   font-family: 'Lato', sans-serif;
 }
+
 #cssmenu ul {
   zoom: 1;
   /***  comment off this for transparent bg **/
-  background: rgba(54,176,182,0.5);
+  background: rgba(117,117,117,0.8);
   /*
   background: #36b0b6;
   background: -moz-linear-gradient(top, #36b0b6 0%, #2a8a8f 100%);
@@ -490,7 +507,7 @@ img#socail, map area{
 }
 #cssmenu li {
   float: left;
-  margin: 0% 0% 0% 6%;
+  margin: 0% 0% 0% 4%;
   border: 0px solid;
 }
 #cssmenu li a {

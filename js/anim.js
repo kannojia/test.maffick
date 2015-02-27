@@ -26,7 +26,7 @@ $(document).ready(function() {
        /********* MENU CONTROLLER ***********/
 			if(target!='#home'){
        		//console.log('home is not here');
-           	var winheight =  0.95*$(window).height();
+           	var winheight =  0.94*$(window).height();
            	//console.log('height is '+winheight);
            	$("#cssmenu").stop().animate({
            		top:winheight
@@ -52,7 +52,7 @@ $(document).ready(function() {
 	   		ta=2;
 	   	}else if(target=='#pronites'){
 	   		ta=3;
-	   	}else if(target=='#socialcause'){
+	   	}else if(target=='#sponsors'){
 	   		ta=4;
 	   	}else if(target=='#contact'){
 	   		ta=5;
@@ -83,7 +83,7 @@ $(document).ready(function() {
        $("html, body").stop().animate({
            scrollLeft: $(target).offset().left,
 		   scrollTop: $(target).offset().top
-       }, 1200);
+       }, 800);
 
 
        /***** Wave Motions Control ******/
@@ -108,11 +108,11 @@ $(document).ready(function() {
     });
 		
 		
-	/****** Slider Motion *********/
+	/****** Home Slider Motion *********/
     $("#hometabs a").bind("click", function(event) {
     	event.preventDefault();
     	var holder = $(this).attr("href");
-    	var adjust = 0.18*$(window).width();
+    	var adjust = 0.12*$(window).width();
     	console.log(adjust);
     	console.log($(holder).offset().left-adjust);
     	$("#overflow-wrapper").stop().animate({
@@ -124,52 +124,51 @@ $(document).ready(function() {
 	/******* Home Page Menu Control ******/
 	$("#box1").hover(
 	function() {
-		$(this).css("height","35%");
+		$(this).css("height","34%");
 		$("#box2, #box3, #box4, #box5").css("height","15%");
 	}, function () {
-		$("#box1, #box2, #box3, #box4, #box5").css("height","19.5%");
+		$("#box1, #box2, #box3, #box4, #box5").css("height","19.0%");
 		}
 	);
 
 	$("#box2").hover(
 		function() {
-			$(this).css("height","35%");
+			$(this).css("height","34%");
 			$("#box1, #box3, #box4, #box5").css("height","15%");
 		}, function () {
-			$("#box1, #box2, #box3, #box4, #box5").css("height","19.5%");
+			$("#box1, #box2, #box3, #box4, #box5").css("height","19.0%");
 		}
 	);
 
 	$("#box3").hover(
 		function() {
-			$(this).css("height","35%");
+			$(this).css("height","34%");
 			$("#box1, #box2, #box4, #box5").css("height","15%");
 		}, function () {
-			$("#box1, #box2, #box3, #box4, #box5").css("height","19.5%");
+			$("#box1, #box2, #box3, #box4, #box5").css("height","19.0%");
 		}
 	);
 
 	$("#box4").hover(
 		function() {
-			$(this).css("height","35%");
+			$(this).css("height","33%");
 			$("#box1, #box2, #box3, #box5").css("height","15%");
 		}, function () {
-			$("#box1, #box2, #box3, #box4, #box5").css("height","19.5%");
+			$("#box1, #box2, #box3, #box4, #box5").css("height","19.0%");
 		}
 	);
 
 	$("#box5").hover(
 		function() {
-			$(this).css("height","35%");
+			$(this).css("height","34%");
 			$("#box1, #box2, #box3, #box4").css("height","15%");
 		}, function () {
-			$("#box1, #box2, #box3, #box4, #box5").css("height","19.5%");
+			$("#box1, #box2, #box3, #box4, #box5").css("height","19.0%");
 		}
 	);
 	
 
-
-	/** panel control ***/
+	/** Events Page Top panel control ***/
 	$("#pbox1 a").bind("click",function(event){
 		event.preventDefault();
 	   	/* up working **/
@@ -240,6 +239,30 @@ $(document).ready(function() {
 		},1500);
 		/**/
 	});
+
+	/***** Events Page Panel Description Display Control *********/
+
+	$("#panelcontainer a").bind("click", function(event) {
+		event.preventDefault();
+
+		var targetpanel = $(this).attr("href");
+		console.log($(targetpanel).css("top")); 
+
+		if($(targetpanel).css("top")<"0")
+		{
+			$(targetpanel).stop().animate({
+				top: "0%"
+			}, 600);
+		}
+		else
+		{
+			$(targetpanel).stop().animate({
+				top: "-100%"
+			}, 600);
+		}
+	});
+
+
 
 	/**** register button control *****/
 	$("#regbutton").bind("click",function(event){
